@@ -84,9 +84,14 @@ int main(void)
 			SRVM_START(0) ;
 			RightSide = 0 ;
 			LeftSide = 0 ;
+			LCD_clear() ;
+		      LCD_sendChar('R') ;    LCD_sendChar('i') ;    LCD_sendChar('g') ;     LCD_sendChar('h') ;	    LCD_sendChar('t') ;
+			
 		}	 if (LeftSide < RightSide)
 		{
 			CarLeft() ;
+			LCD_clear() ;
+		      LCD_sendChar('L') ;    LCD_sendChar('e') ;    LCD_sendChar('f') ;     LCD_sendChar('t') ;	   
 			_delay_ms(3000) ;
 			CarStop() ;
 			CarForward() ;
